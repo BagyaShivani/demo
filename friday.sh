@@ -3,11 +3,13 @@ commitmsg=$3
 
 pushrepo(){
     git init 
+    git checkout master
+    git pull -s recursive -X theirs
+    Step 3 : git reset --hard origin/master
     git remote add origin git@github.com:BagyaShivani/$foldername.git
     git add .
     git commit -m "$commitmsg"
     git push -u origin master
-    git fetch
 }
 
 update(){
