@@ -4,7 +4,7 @@ require("dotenv").config();
 const  octikit  = require("@octokit/rest");
 
 const clientWithAuth = new octikit({
-    auth: "fd987d324dc60355b479c9501fd4938a662e9002"
+    auth: "fa245804f1c954735eb2bd4f221b5e3f01699cda"
 });
 let cmd = process.argv[2];
 let folderName = process.argv[3];
