@@ -7,7 +7,7 @@ pushrepo(){
     git commit -m "$commitmsg"
     git remote add origin git@github.com:BagyaShivani/$foldername.git
  
-    git push -u origin master
+    git push origin master
 }
 
 update(){
