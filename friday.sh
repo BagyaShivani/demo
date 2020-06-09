@@ -5,6 +5,7 @@ pushrepo(){
     git init 
     git add .
     git commit -m "$commitmsg"
+    git remote rm origin
     git remote add origin git@github.com:BagyaShivani/$foldername.git
  
     git push -u origin master
