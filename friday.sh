@@ -5,9 +5,9 @@ pushrepo(){
     git init 
     git add .
     git commit -m "$commitmsg"
-    git remote add myorigin git@github.com:BagyaShivani/$foldername.git
+    git remote add origin git@github.com:BagyaShivani/$foldername.git
  
-    git push origin master
+    git push -u origin master
 }
 
 update(){
