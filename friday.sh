@@ -7,6 +7,7 @@ pushrepo(){
     git add .
     git commit -m "$commitmsg"
     git push -u origin master
+    git fetch
 }
 
 update(){
