@@ -3,8 +3,8 @@ commitmsg=$3
 
 pushrepo(){
     git init 
-    git remote set-url origin git@github.com:BagyaShivani/$foldername.git
-  
+    git remote remove origin
+    git remote add origin git@github.com:BagyaShivani/$foldername.git
     git add .
     git commit -m "$commitmsg"
     git push -u origin master
