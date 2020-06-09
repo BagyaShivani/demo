@@ -4,6 +4,7 @@ commitmsg=$3
 pushrepo(){
     git init 
     git remote add origin git@github.com:BagyaShivani/$foldername.git
+    git remote set-url origin https://github.com/BagyaShivani/$foldername
     git add .
     git commit -m "$commitmsg"
     git push -u origin master
