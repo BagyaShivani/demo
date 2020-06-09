@@ -3,7 +3,6 @@ commitmsg=$3
 
 pushrepo(){
     git init 
-    git remote remove origin git@github.com:BagyaShivani/$foldername.git
     git remote add origin git@github.com:BagyaShivani/$foldername.git
     git add .
     git commit -m "$commitmsg"
